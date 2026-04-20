@@ -1,14 +1,8 @@
 from __future__ import annotations
 
 import sqlite3
-from pathlib import Path
 
-
-BASE_DIR = Path(__file__).resolve().parents[2]
-DATA_DIR = BASE_DIR / "data"
-PRODUCTS_DB_PATH = DATA_DIR / "products.db"
-CUSTOMER_DB_PATH = DATA_DIR / "customer_interactions.db"
-
+from app.core.config import CUSTOMER_DB_PATH, DATA_DIR, PRODUCTS_DB_PATH
 
 def get_products_connection() -> sqlite3.Connection:
     connection = sqlite3.connect(PRODUCTS_DB_PATH)
