@@ -16,6 +16,10 @@ It uses two SQLite databases:
 - one for products, solution features, pricing, regions, and challenge mappings
 - one for customers, current product usage, feedback, and business challenges
 
+Seed initialization creates a larger mock dataset for realistic testing:
+- 100 products in the product catalog database
+- 100 customers in the customer interaction database
+
 ## Documentation
 
 - Overview: [docs/project-overview.md](docs/project-overview.md)
@@ -43,8 +47,10 @@ pytest
 
 - `data/products.db`
   - stores products, pricing, descriptions, supported regions, solution features, and challenge mappings
+  - seeded with 100 mock products
 - `data/customer_interactions.db`
   - stores customers, current product usage, feedback summaries, and business challenges
+  - seeded with 100 mock customers
 
 ## Recommendation Logic
 
