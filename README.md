@@ -1,5 +1,26 @@
 # FastAPI Product Recommendation MVP
 
+This project is a lightweight product recommendation system built with FastAPI and SQLite for Visa-style customer portfolios.
+
+It focuses on simple, explainable recommendations for cross-sell and upsell opportunities by combining:
+- product metadata and pricing
+- regional availability and solution features
+- customer product usage and feedback
+- customer business challenges mapped to relevant products
+
+## Project Description
+
+The current MVP helps relationship teams identify which product should be recommended next for an existing customer and why the recommendation is relevant.
+
+It uses two SQLite databases:
+- one for products, solution features, pricing, regions, and challenge mappings
+- one for customers, current product usage, feedback, and business challenges
+
+## Documentation
+
+- Overview: [docs/project-overview.md](docs/project-overview.md)
+- Architecture: [docs/architecture.md](docs/architecture.md)
+
 ## Run
 
 ```bash
